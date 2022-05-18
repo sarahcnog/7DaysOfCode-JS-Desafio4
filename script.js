@@ -3,10 +3,10 @@ var intervalo2 = 10;
 var numerosecreto = parseInt(Math.random() * (intervalo2 - intervalo1 + 1)) + intervalo1;
 var i = 0;
 
-chute = prompt("Qual o número que você quer chutar no intervalo de " + intervalo1 + " e " + intervalo2 + "?");
+chute = prompt("Qual o número que você quer chutar no intervalo de " + intervalo1 + " a " + intervalo2 + "?");
 
 while (chute >= intervalo2 || chute <=intervalo1) {
-  chute = prompt("Digite um número válido no intervalo de " + intervalo1 + " e " + intervalo2 + ".");
+  chute = prompt("Digite um número válido no intervalo de " + intervalo1 + " a " + intervalo2 + ".");
 }
 
 for (i = 0; i <= 2; i++) {
@@ -18,6 +18,6 @@ for (i = 0; i <= 2; i++) {
   } else {
     tentativas = 2-i;
     alert("Ooops.. Você errou. Você ainda tem mais " + tentativas + " tentativa(s).")
-    chute = prompt("Digite um número válido no intervalo de " + intervalo1 + " e " + intervalo2 + ".");
+    chute = prompt("Digite um número válido no intervalo de " + intervalo1 + " a " + intervalo2 + ".");
   }
 }
