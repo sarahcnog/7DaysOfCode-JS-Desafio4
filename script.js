@@ -5,7 +5,7 @@ var i = 0;
 
 chute = prompt("Qual o número que você quer chutar no intervalo de " + intervalo1 + " a " + intervalo2 + "?");
 
-while (chute >= intervalo2 || chute <=intervalo1) {
+while (chute > intervalo2 || chute < intervalo1) {
   chute = prompt("Digite um número válido no intervalo de " + intervalo1 + " a " + intervalo2 + ".");
 }
 
